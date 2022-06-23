@@ -1,0 +1,20 @@
+syntax = "proto3";
+package Service;
+option go_package = "WordCount_gRPC/Service";
+
+service GetWordCount{
+    rpc WordCount (Request) returns (Response) {}
+}
+
+message Request {
+    string Text = 1;
+}
+
+message Response{
+    repeated WordCount Wc = 1;
+}
+
+message WordCount{
+    string Word = 1;
+    uint32 Count = 2;
+}
