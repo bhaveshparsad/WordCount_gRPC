@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"net"
-	pb "WordCount_gRPC/Service"
-	"WordCount_gRPC/WCService"
+	pb "WordCount_gRPC/protoFiles"
+	"WordCount_gRPC/wordCountMain"
 	"google.golang.org/grpc"
 )
 
@@ -20,7 +20,7 @@ func main () {
 
 	gRPCServer := grpc.NewServer() // Initializing new server
 
-	pb.RegisterGetWordCountServer(gRPCServer, &WCService.WCServer{}) // Registering as new grpc service
+	pb.RegisterGetWordCountServer(gRPCServer, &wordCountMain.WCServer{}) // Registering as new grpc service
 
 	log.Println("Server Listening", lis.Addr())
 

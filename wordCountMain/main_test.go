@@ -1,8 +1,8 @@
-package WCService
+package wordCountMain
 
 import (
 	"context"
-	pb "WordCount_gRPC/Service"
+	pb "WordCount_gRPC/protoFiles"
 	"log"
 	"net"
 	"testing"

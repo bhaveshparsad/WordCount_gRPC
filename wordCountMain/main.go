@@ -1,11 +1,11 @@
-package WCService
+package wordCountMain
 
 import (
 	"context"
 	"log"
 	"sort"
 	"strings"
-	pb "WordCount_gRPC/Service"
+	pb "WordCount_gRPC/protoFiles"
 )
 
 type WCServer struct {

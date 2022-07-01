@@ -1,6 +1,6 @@
 syntax = "proto3";
-package Service;
-option go_package = "WordCount_gRPC/Service";
+package protoFiles;
+option go_package = "WordCount_gRPC/protoFiles";
 
 service GetWordCount{
     rpc WordCount (Request) returns (Response) {}

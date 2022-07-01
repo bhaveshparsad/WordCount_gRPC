@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	pb "WordCount_gRPC/Service"
+	pb "WordCount_gRPC/protoFiles"
 	"log"
 	"os"
 	"time"
